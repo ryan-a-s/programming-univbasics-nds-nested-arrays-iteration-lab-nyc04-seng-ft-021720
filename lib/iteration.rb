@@ -48,5 +48,5 @@ def total_even_pairs(src)
     end
     row_index +=1
   end
-  puts total.to_i
+  total.to_i
 end
