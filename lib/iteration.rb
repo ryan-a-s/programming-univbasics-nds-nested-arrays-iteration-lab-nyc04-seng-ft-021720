@@ -11,11 +11,11 @@ def join_ingredients(src)
   while row_index < src.count do
     element_index = 0
     while element_index < src[row_index].count do
-      ingredients.push "I love #{src[row_index][element_index]} and #{src[row_index][element_index]} on my pizza"
-      element_index +=1
+      ingredients << "I love #{src[row_index][element_index]} and #{src[row_index][element_index]} on my pizza"
     end
-    row_index += 1
+    element_index +=1
   end
+  row_index += 1
 end
 
 def find_greater_pair(src)
