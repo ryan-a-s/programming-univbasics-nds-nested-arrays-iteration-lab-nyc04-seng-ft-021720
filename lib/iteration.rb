@@ -22,9 +22,9 @@ def find_greater_pair(src)
   row_index = 0
   greater_num = Array.new
   while row_index < src.count do
-    if src[row_index][0] > src[row_index][1]
+    if src[row_index][0] >= src[row_index][1]
       greater_num << src[row_index][0]
-    elsif src[row_index][1] > src[row_index][0]
+    elsif src[row_index][1] >= src[row_index][0]
       greater_num << src[row_index][1]
     end
     row_index += 1
