@@ -43,10 +43,8 @@ def total_even_pairs(src)
   row_index = 0
   total = Array.new
   while row_index < src.count do
-    index_0 = src[row_index][0]
-    index_1 = src[row_index][1]
-    if index_0 % 2 == 0 && index_1 % 2 == 0
-      total.to_i += index_0 + index_1
+    if src[row_index][0] % 2 == 0 && src[row_index][1] % 2 == 0
+      total.to_i += src[row_index][0] + src[row_index][1]
     end
     row_index +=1
   end
